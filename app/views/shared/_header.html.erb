@@ -12,7 +12,9 @@
     </div>
     <div class="navbar-end">
     <div>
-        <%= link_to  "Create new entry", new_entry_path, class: "button is-light" %>
+        <%= link_to  new_entry_path, class: "button is-light" do %>
+            <span class="navbar-item">Create New Entry</span>
+        <% end %>
     </div>
     </div>   
 </div>
