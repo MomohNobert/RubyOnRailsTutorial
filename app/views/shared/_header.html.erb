@@ -3,7 +3,9 @@
     <div class="navbar-start">
     <div>
         <h1 class="title">
+        <%= link_to root_path do %>
             Food Log.
+        <% end %>
         </h1>
         <p class="subtitle">
             <% if content_for(:title) %>
