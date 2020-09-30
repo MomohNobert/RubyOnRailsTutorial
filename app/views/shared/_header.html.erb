@@ -3,10 +3,14 @@
     <div class="navbar-start">
     <div>
         <h1 class="title">
-            Hello People,
+            Food Log.
         </h1>
         <p class="subtitle">
-            Welcome to  <strong>Food Log</strong>!
+            <% if content_for(:title) %>
+                <%= yield :title %>
+            <% else %>
+                Stay fit, stay comfortable.
+            <% end %>
         </p>
     </div>
     </div>
